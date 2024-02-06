@@ -1,0 +1,108 @@
+#options{
+    width: 100vw;
+    height: 130px;
+    /* box-sizing: border-box; */
+    background-color: rgb(79, 27, 27);
+    color:rgb(252, 147, 10);
+}
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding: 20px;
+}
+
+input[type="checkbox"],input[type="radio"]{
+    display: none;
+}
+
+input[type="color"]{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+input[type="checkbox"]+label,input[type="radio"]+label{
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+input[type="number"]{
+    width: 60px;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+    color: rgb(252, 147, 10);
+    background-color:rgb(234, 221, 205);
+    border: none;
+    font-weight: 800;
+}
+select{
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    color: rgb(252, 147, 10);
+    background-color: rgb(234, 221, 205);
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+input:checked + label{
+    background-color: rgb(234, 221, 205);
+    color:rgb(79, 27, 27);
+}
+
+
+#acF_div{
+    height: 40px;
+    display: flex;
+    padding-inline: 100px;
+    align-items: center;
+    gap: 10px;
+}
+#activeCell{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 800;
+    background-color: rgb(234, 221, 205);
+    
+}
+#formula{
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppins-extra-bold;
+    src: url(./fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: poppins-italic;
+    src: url(./fonts/Poppins-BlackItalic.ttf);
+}
+@font-face {
+    font-family: poppins-medium;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(./fonts/Poppins-Regular.ttf);
+}

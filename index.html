@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="options.css" />
+    <link rel="icon" href="./asset/sheets_2020q4_48dp.png">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="options">
+      <form action="" id="form">
+        <select name="fontFamily" id="">
+          <option value="poppins-bold">Poppins Bold</option>
+                <option value="poppins-extra-bold">Poppins Extra Bold</option>
+                <option value="poppins-italic">Poppins Italic</option>
+                <option value="poppins-medium">Poppins Medium</option>
+                <option value="poppins-regular">Poppins Regular</option>
+        </select>
+        <input
+          type="number"
+          name="fontSize"
+          id=""
+          min="8"
+          max="32"
+          value="16"
+        />
+
+        <div>
+          <input type="checkbox" name="isBold" id="bold" />
+          <label for="bold" class="material-icons">format_bold</label>
+        </div>
+        <div>
+          <input type="checkbox" name="isItalic" id="italic" />
+          <label for="italic" class="material-icons">format_italic</label>
+        </div>
+        <div>
+          <input type="checkbox" name="isUnderline" id="underline" />
+          <label for="underline" class="material-icons">format_underline</label>
+        </div>
+
+        <div>
+          <input type="radio" name="align" id="left" value="left" checked/>
+          <label for="left" class="material-icons">format_align_left</label>
+          <input type="radio" name="align" id="center" value="center" />
+          <label for="center" class="material-icons">format_align_center</label>
+          <input type="radio" name="align" id="right" value="right" />
+          <label for="right" class="material-icons">format_align_right</label>
+        </div>
+
+        <div>
+          <input type="color" name="fontColor" id="fontcolor" value="#000000" />
+          <label for="fontcolor" class="material-icons"
+            >format_color_text</label
+          >
+        </div>
+        <div>
+          <input type="color" name="bgColor" id="bgcolor" value="#eaddcd"/>
+          <label for="bgcolor" class="material-icons">format_color_fill</label>
+        </div>
+
+        <div onclick="downloadText()" class="material-icons" id="textDownload">download</div>
+        <div id="sub-form">
+          <input type="text" id="searched_text" placeholder="Find text">
+          <input type="text" name="" id="replacing_txt" placeholder="Replace text with...">
+          <button id="fnr-btn">REPLACE</button>
+        </div>
+      </form>
+      
+
+      <div id="acF_div">
+        <div id="activeCell">null</div>
+        <input type="text" name="" id="formula" placeholder="fx ():">
+      </div>
+    </div>
+    <div id="root">
+      <div id="header">
+        <div class="header_cell"></div>
+      </div>
+      <div id="spreadSheet">
+        <div id="sno_div"></div>
+        <div id="cells-body"></div>
+      </div>
+    </div>
+
+    <script src="./gsFunctionality.js"></script>
+    <script src="./googleSheet.js"></script>
+    <script src="./download.js"></script>
+    <script src="./find&replace.js"></script>
+  </body>
+</html>
